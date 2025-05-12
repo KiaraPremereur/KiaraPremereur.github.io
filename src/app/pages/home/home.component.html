@@ -1,0 +1,15 @@
+<div class="container">
+
+
+<div class="header">Woorden oefenen</div>
+
+<div class="category-container">
+  <mat-card *ngFor="let category of structureData?.categories; let i = index"
+            appearance="outlined"
+            (click)="openCategory(category.title)"
+            class="category-card">
+    <mat-card-header>{{ i + 1 }}.</mat-card-header>
+    <mat-card-content>{{ category.title }}</mat-card-content>
+  </mat-card>
+</div>
+</div>
