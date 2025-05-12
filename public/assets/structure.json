@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "title": "eten",
+      "subCategories": [
+        {
+          "name": "fruit & groenten",
+          "images": [
+            {
+              "id": "appel",
+              "code": "1.1",
+              "path": "assets/1_eten/fruit_groenten/1.1.png",
+              "audio1": "assets/1_eten/fruit_groenten/1.1.1.mp3",
+              "audio2": "assets/1_eten/fruit_groenten/1.1.2.mp3",
+              "tip1": "A____",
+              "tip2": "AP___"
+            },
+            {
+              "id": "kiwi",
+              "code": "1.2",
+              "path": "assets/1_eten/fruit_groenten/1.2.png",
+              "audio1": "assets/1_eten/fruit_groenten/1.2.1.mp3",
+              "audio2": "assets/1_eten/fruit_groenten/1.2.2.mp3",
+              "tip1": "K___",
+              "tip2": "KI__"
+            },
+            {
+              "id": "kiwi",
+              "code": "1.2",
+              "path": "assets/1_eten/fruit_groenten/1.2.png",
+              "audio1": "assets/1_eten/fruit_groenten/1.2.1.mp3",
+              "audio2": "assets/1_eten/fruit_groenten/1.2.2.mp3",
+              "tip1": "K___",
+              "tip2": "KI__"
+            },
+            {
+              "id": "kiwi",
+              "code": "1.2",
+              "path": "assets/1_eten/fruit_groenten/1.2.png",
+              "audio1": "assets/1_eten/fruit_groenten/1.2.1.mp3",
+              "audio2": "assets/1_eten/fruit_groenten/1.2.2.mp3",
+              "tip1": "K___",
+              "tip2": "KI__"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "verzorging",
+      "subCategories": [
+        {
+          "name": "zeep",
+          "images": [
+            {
+              "id": "zeepje",
+              "code": "1.1",
+              "path": "assets/1_eten/fruit_groenten/1.1.png",
+              "audio1": "assets/1_eten/fruit_groenten/1.1.1.mp3",
+              "audio2": "assets/1_eten/fruit_groenten/1.2.2.mp3",
+              "tip1": "Z___",
+              "tip2": "ZE__"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
