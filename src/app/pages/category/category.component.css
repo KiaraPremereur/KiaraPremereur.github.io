@@ -48,6 +48,7 @@ h2 {
 @media (max-width: 1000px) {
   .image-container {
     max-width: 33.33333333%;
+    justify-content: center;
   }
 
   .product-image, .image-code {
