@@ -1,12 +1,16 @@
+<div class="page-container">
+<!--  <h1>{{ subCategory.name }}</h1>-->
+<!--  TODO: category name gebruiken-->
+  <h1>eten</h1>
+  <div *ngIf="subCategories">
+    <div *ngFor="let subCategory of subCategories">
+      <h2>{{ subCategory.name }}</h2>
 
-<div *ngIf="subCategories">
-  <div *ngFor="let subCategory of subCategories">
-    <h1>{{ subCategory.name }}</h1>
-
-    <div class="image-grid">
-      <div class="image-container" *ngFor="let img of subCategory.images" (click)="goToProductPage(img.id)">
-        <span class="image-code">{{ img.code }}</span>
-        <img [src]="img.path" alt="Image" class="image" />
+      <div class="image-grid">
+        <div class="image-container" *ngFor="let img of subCategory.images" (click)="goToProductPage(img.id)">
+          <span class="image-code">{{ img.code }}</span>
+          <img [src]="img.path" alt="Image" class="image product-image"/>
+        </div>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-<div *ngIf="imageData" class="container">
+<div class="page-container">
 
   <div class="header">
     <button mat-icon-button (click)="onBack()" class="backBtn">
@@ -7,30 +7,35 @@
     <span class="code">{{ imageData.code }}</span>
   </div>
 
+  <section id="productPage-body">
 
-  <div class="image-section">
-    <img [src]="imageData.path" alt="Product image" class="product-image"/>
-  </div>
+    <div id="body-left">
+      <img [src]="imageData.path" alt="Product image" class="product-image"/>
 
-  <div class="audio-section">
-    <h3 class="subtitle">eerste letter</h3>
-    <audio controls (ended)="onFirstAudioPlayed()" (play)="onFirstAudioClicked()">
-      <source [src]="imageData.audio1" type="audio/mpeg"/>
-    </audio>
+<!--      <div class="tip-section">-->
+        <p class="tip_text" *ngIf="!secondClicked && firstClicked">{{ imageData.tip1 }}</p>
+        <p class="tip_text" *ngIf="secondClicked">{{ imageData.tip2 }}</p>
+        <p class="tip_text">T____</p>
+<!--      </div>-->
+    </div>
 
-    <button *ngIf="firstEnded && hasSecondAudio && !newClicked" (click)="onShowSecond()">
-      nieuwe tip?
-    </button>
+    <div id="body-right">
 
-    <h3 *ngIf="showSecond && hasSecondAudio" class="subtitle">Eerste 2 letters</h3>
-    <audio controls *ngIf="showSecond && hasSecondAudio" (play)="onSecondAudioClicked()">
-      <source [src]="imageData.audio2" type="audio/mpeg"/>
-    </audio>
-  </div>
+      <div class="audio-section">
+        <h3 class="subtitle">eerste letter</h3>
+        <audio controls (ended)="onFirstAudioPlayed()" (play)="onFirstAudioClicked()">
+          <source [src]="imageData.audio1" type="audio/mpeg"/>
+        </audio>
 
-  <div class="tip-section">
-    <p *ngIf="!secondClicked && firstClicked">{{ imageData.tip1 }}</p>
-    <p *ngIf="secondClicked">{{ imageData.tip2 }}</p>
-  </div>
+        <button *ngIf="firstEnded && hasSecondAudio && !newClicked" (click)="onShowSecond()">
+          nieuwe tip?
+        </button>
+
+        <h3 *ngIf="showSecond && hasSecondAudio" class="subtitle">Eerste 2 letters</h3>
+        <audio controls *ngIf="showSecond && hasSecondAudio" (play)="onSecondAudioClicked()">
+          <source [src]="imageData.audio2" type="audio/mpeg"/>
+        </audio>
+      </div>
+    </div>
+  </section>
 </div>
-

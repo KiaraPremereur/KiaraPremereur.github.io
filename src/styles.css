@@ -3,12 +3,26 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.container {
-  min-height: 100vh;
-}
-
 .backBtn {
   display: flex !important;
   background: white !important;
 }
 
+.image-container {
+  border-radius: 50%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  width: 60%;
+  justify-self: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .page-container {
+    width: 90%;
+  }
+}

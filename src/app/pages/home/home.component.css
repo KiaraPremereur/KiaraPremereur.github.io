@@ -1,15 +1,14 @@
 :host {
   display: block;
-  background-color: #f9cbbd; // soft peachy pink
-min-height: 100vh;
-  padding: 24px 16px;
-  box-sizing: border-box;
+  background-color: #FFFAE6;
+  min-height: 100vh;
 }
 
 .header {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .category-container {
@@ -19,22 +18,17 @@ min-height: 100vh;
 }
 
 .category-card {
-  background-color: white;
+  background: none;
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  border: 5px solid mediumseagreen;
+}
 
-  mat-card-header {
-    font-weight: 700;
-    font-size: 18px;
-    padding: 0;
-    margin-bottom: 4px;
-  }
-
-  mat-card-content {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0;
-  }
+mat-card-content {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+  text-align: center;
+  background: none;
 }
